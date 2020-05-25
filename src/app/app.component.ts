@@ -10,6 +10,25 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+
+  appPages = [
+    {
+      title: 'Dashboard',
+      url: '',
+      icon: 'easel'
+    },
+    {
+      title: 'Timeline',
+      url: '/timeline',
+      icon: 'film'
+    },
+    {
+      title: 'Setting',
+      url: '/settings',
+      icon: 'settings'
+    }
+  ];
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
